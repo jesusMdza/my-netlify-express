@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "netlify-lambda serve src",
-    "build": "netlify-lambda build src",
+    "dev": "netlify-lambda serve public",
+    "build": "netlify-lambda build public",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
