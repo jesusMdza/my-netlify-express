@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "netlify-lambda serve public",
+    "dev": "nodemon express-local.js",
     "build": "netlify-lambda build dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -14,6 +14,7 @@
     "dotenv": "^16.0.2",
     "express": "^4.18.1",
     "netlify-lambda": "^2.0.15",
+    "nodemon": "^2.0.20",
     "serverless-http": "^3.0.2"
   }
 }
