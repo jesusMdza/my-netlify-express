@@ -1,9 +1,12 @@
+require('dotenv').config()
 const express = require('express')
 const serverless = require('serverless-http')
 const app = express()
 const port = 3000
 const path = require('path')
 const router = express.Router()
+
+console.log('CURRENT: ', process.env.NODE_ENV);
 
 router.get('/', (req, res) => {
   res.sendFile('index.html', { root: './public' })
