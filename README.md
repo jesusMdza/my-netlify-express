@@ -11,6 +11,10 @@ Express app hosted on netlify with working HTML and CSS
 Commands:
 `npm run dev`: Run app locally
 
-Netlify automatically deploys when merging to main
+Branches
+(main) production branch
+(staging) staging branch
+
+Pushing changes to either branch will automatically update within netlify
 
 Demo Link: https://moonlit-truffle-451fe5.netlify.app/
