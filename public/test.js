@@ -1,0 +1,1 @@
+alert('test has been activated');
