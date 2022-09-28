@@ -9,6 +9,10 @@ router.get('/', (req, res) => {
   res.sendFile('index.html', { root: './public' })
 })
 
+router.get('/static', (req, res) => {
+  res.send('/static route')
+})
+
 app.use('/.netlify/functions/express', router)
 app.use('/.netlify/functions/express/static', express.static('public'))
 
