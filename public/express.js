@@ -10,11 +10,10 @@ router.get('/', (req, res) => {
 })
 
 router.get('/static', (req, res) => {
-  res.send('/static route')
+  res.sendFile('style.css', { root: './public' })
 })
 
-app.use('/.netlify/functions/express', router)
-app.use('/.netlify/functions/express/static', express.static('public'))
+app.use('/.netlify/functions/express', express.static('public'))
 
 module.exports = app;
 module.exports.handler = serverless(app);
